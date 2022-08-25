@@ -1,12 +1,13 @@
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-import static org.junit.Assert.assertEquals;
+import org.testng.annotations.Test;
+
 public class StatServiceTest {
 
     private int expected;
 
     @Test
-    public void testSum() {
+    public void testSum() { // Сумма продаж
         StatService service = new StatService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 19};
         long actual = service.sum(sales);
@@ -16,7 +17,7 @@ public class StatServiceTest {
     }
 
     @Test
-    public void maxSales() {
+    public void maxSales() { // Максимальные продажи
         StatService service = new StatService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 19};
         long actual = service.maxSales(sales);
@@ -26,7 +27,7 @@ public class StatServiceTest {
     }
 
     @Test
-    public void minSales() {
+    public void minSales() { // Минимальные продажи
         StatService service = new StatService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 19};
         long actual = service.minSales(sales);
@@ -36,7 +37,7 @@ public class StatServiceTest {
     }
 
     @Test
-    public void average() {
+    public void average() { // Средние продажи
         StatService service = new StatService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 19};
         long actual = service.average(sales);
@@ -44,5 +45,4 @@ public class StatServiceTest {
 
         assertEquals(expected, actual);
     }
-
 }

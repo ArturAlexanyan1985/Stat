@@ -1,15 +1,13 @@
-import org.jetbrains.annotations.NotNull;
-
 public class StatService {
-    public long sum(long @NotNull [] sales) {
+    public long sum(long  [] sales) {
         long sum = 0;
         for (long sale : sales) {
             sum += sale;
         }
-    return sum;
+        return sum;
     }
 
-    public int maxSales(long @NotNull [] sales) {
+    public int maxSales(long [] sales) {
         int maxMonth = 0;
         int month = 0;
         for (long sale : sales) {
@@ -40,7 +38,7 @@ public class StatService {
     public int avgLess(long[] sales) {
         long avg = average(sales);
         int count = 0;
-        for (long sale : sales ) {
+        for (long sale : sales) {
             if (sale < avg) {
                 count++;
             }
