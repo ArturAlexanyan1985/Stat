@@ -21,7 +21,7 @@ public class StatServiceTest {
         StatService service = new StatService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 19};
         long actual = service.maxSales(sales);
-        long expected = 6;
+        long expected = 9;
 
         assertEquals(expected, actual);
     }
@@ -31,7 +31,7 @@ public class StatServiceTest {
         StatService service = new StatService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 19};
         long actual = service.minSales(sales);
-        long expected = 6;
+        long expected = 9;
 
         assertEquals(expected, actual);
     }
