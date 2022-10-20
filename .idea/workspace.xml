@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7c232bbc-09f5-4568-b6c3-93b830f4131d" name="Changes" comment="First Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StatService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StatServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StatServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,36 +40,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StatServiceTest.average">
-    <configuration name="StatServiceTest.TestavgLess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Stat" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StatServiceTest" />
-      <option name="METHOD_NAME" value="TestavgLess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.StatServiceTest.MaxSales">
     <configuration name="StatServiceTest.average" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Stat" />
       <option name="PACKAGE_NAME" value="" />
@@ -99,23 +90,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StatServiceTest.testSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StatServiceTest.MaxSales" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Stat" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StatServiceTest" />
-      <option name="METHOD_NAME" value="testSum" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" value="MaxSales" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatServiceTest.MinSales" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Stat" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StatServiceTest" />
+      <option name="METHOD_NAME" value="MinSales" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.StatServiceTest.MaxSales" />
+        <item itemvalue="TestNG.StatServiceTest.MinSales" />
         <item itemvalue="JUnit.StatServiceTest.average" />
         <item itemvalue="JUnit.StatServiceTest.minSales" />
         <item itemvalue="JUnit.StatServiceTest.maxSales" />
-        <item itemvalue="JUnit.StatServiceTest.testSum" />
-        <item itemvalue="JUnit.StatServiceTest.TestavgLess" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661435358348</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First Commit">
+      <created>1661436498408</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661436498408</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

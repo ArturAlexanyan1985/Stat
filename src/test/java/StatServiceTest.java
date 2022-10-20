@@ -1,11 +1,7 @@
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.testng.annotations.Test;
-
 public class StatServiceTest {
-
     private int expected;
-
     @Test
     public void testSum() { // Сумма продаж
         StatService service = new StatService();
@@ -42,6 +38,26 @@ public class StatServiceTest {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 19};
         long actual = service.average(sales);
         long expected = 15;
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void MinSales() { // Продажи ниже среднего
+        StatService service = new StatService();
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 19};
+        long actual = service.MinSales(sales);
+        long expected = 5;
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void MaxSales() { // Продажи выше среднего
+        StatService service = new StatService();
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 19};
+        long actual = service.MaxSales(sales);
+        long expected = 7;
 
         assertEquals(expected, actual);
     }
