@@ -66,7 +66,7 @@ public class StatService { // сумма продаж
         int MaxMonth = 0;
         int month = 0;
         for (long sale : sales) {
-            if (sale < sales[MaxMonth]) {
+            if (sale > sales[MaxMonth]) {
                 MaxMonth = month;
             }
             month = month + 1;
