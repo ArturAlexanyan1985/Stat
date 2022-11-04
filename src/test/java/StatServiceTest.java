@@ -47,7 +47,7 @@ public class StatServiceTest {
         StatService service = new StatService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 19};
         long actual = service.MinSales(sales);
-        long expected = 5;
+        long expected = 9;
 
         assertEquals(expected, actual);
     }
@@ -57,7 +57,7 @@ public class StatServiceTest {
         StatService service = new StatService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 19};
         long actual = service.MaxSales(sales);
-        long expected = 7;
+        long expected = 6;
 
         assertEquals(expected, actual);
     }
